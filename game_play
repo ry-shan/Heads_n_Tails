@@ -4,7 +4,7 @@ coin = ['Heads', 'Tails']
 You = 0
 Computer = 0
 
-# game play
+# gameplay
 for turn in range(3):
   toss = random.choice(coin)
   guess = input()
