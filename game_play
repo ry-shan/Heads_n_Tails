@@ -1,0 +1,23 @@
+import random
+
+coin = ['Heads', 'Tails']
+You = 0
+Computer = 0
+
+for turn in range(3):
+  toss = random.choice(coin)
+  guess = input()
+  if guess == toss:
+    You +=1
+    print(f'It was {toss}!You win!')
+  else:
+    Computer +=1
+    print(f'You loose!')
+
+score = [You, Computer]
+print('Final Score:', score)
+
+if You > Computer:
+  print(f'You won {You} to {Computer}!')
+else:
+  print(f'You lost {You} to {Computer} :(')
